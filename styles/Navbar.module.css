@@ -1,0 +1,44 @@
+.nav {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.center {
+  max-width: 950px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.center h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+}
+
+.links,
+.socials {
+  transition: 0.3s ease;
+}
+
+.links li:hover,
+.socials li:hover {
+  color: var(--color-primary);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
