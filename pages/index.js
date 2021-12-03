@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Nav from "../components/Navbar";
 import Contact from "../components/Contact";
 import Map from "../components/Map";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <CTA />
       <About />
       <Classes />
+      <Gallery />
       <Contact />
       <Map />
     </>

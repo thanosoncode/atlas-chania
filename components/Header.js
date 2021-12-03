@@ -10,11 +10,11 @@ const Header = () => {
         HOW TO LIFT THE WORLD
       </h1>
       <div className={headerStyles.btns}>
-        <Link href="#contact">
-          <button className={headerStyles.btn}>GET STARTED</button>
-        </Link>
         <Link href="#about">
-          <button className={headerStyles.outline}>LEARN MORE</button>
+          <button className={headerStyles.btn}>LEARN MORE</button>
+        </Link>
+        <Link href="#contact">
+          <button className={headerStyles.outline}>GET STARTED</button>
         </Link>
       </div>
     </div>

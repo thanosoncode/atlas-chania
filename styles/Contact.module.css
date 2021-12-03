@@ -110,6 +110,15 @@
 .map {
   width: 400px;
   height: 300px;
+  margin-bottom: 1rem;
+}
+
+.details p:last-child {
+  margin-top: 0.5rem;
+}
+
+.details p {
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 900px) {

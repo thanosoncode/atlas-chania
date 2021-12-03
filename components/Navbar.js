@@ -15,10 +15,13 @@ const Navbar = () => {
     <>
       <nav className={navbarStyles.nav} id="home">
         <div className={navbarStyles.center}>
-          <Image src={logo} width="30px" height="30px" />
-          <h1>
-            <Link href="#home">Atlas Chania</Link>
-          </h1>
+          <div className={navbarStyles.logoDiv}>
+            <Image src={logo} width="30px" height="30px" />
+            <h1>
+              <Link href="#home">Atlas Chania</Link>
+            </h1>
+          </div>
+
           {showMenu ? (
             <div
               className={navbarStyles.menu}

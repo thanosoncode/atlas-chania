@@ -23,6 +23,13 @@
   font-weight: 800;
 }
 
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .links {
   display: flex;
   justify-content: center;

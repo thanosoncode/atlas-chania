@@ -55,12 +55,14 @@ const Contact = () => {
           <div className={contactStyles.map}>
             <Map />
           </div>
+
           <p>
             <span>
               <ImLocation />
             </span>{" "}
             Agiou Nektariou 31-29, Chania 733 00
           </p>
+
           <p>
             <span>
               <BsPhone />
