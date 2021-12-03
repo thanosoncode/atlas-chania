@@ -5,14 +5,14 @@ import classesStyles from "../styles/Classes.module.css";
 const Classes = () => {
   return (
     <div className={classesStyles.container}>
-      <h4>Get The best For You</h4>
-      <h1>Our Training Styles</h1>
+      <h4>Get The Best Out For You</h4>
+      <h1>Training Styles</h1>
       <div className={classesStyles.flex}>
         {classes.map((item, index) => {
           return (
-            <div key={index} className={classesStyles.card}>
+            <div key={index} className={classesStyles.card} id="classes">
               <div className={classesStyles.imgdiv}>
-                <Image src={item.image} width="360px" height="250px" />
+                <Image src={item.image} width="360px" height="250px" alt="" />
               </div>
               <div className={classesStyles.infoflex}>
                 <div className={classesStyles.infotitle}>

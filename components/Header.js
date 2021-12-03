@@ -1,3 +1,4 @@
+import Link from "next/link";
 import headerStyles from "../styles/Header.module.css";
 
 const Header = () => {
@@ -9,8 +10,12 @@ const Header = () => {
         HOW TO LIFT THE WORLD
       </h1>
       <div className={headerStyles.btns}>
-        <button className={headerStyles.btn}>GET STARTED</button>
-        <button className={headerStyles.outline}>LEARN MORE</button>
+        <Link href="#contact">
+          <button className={headerStyles.btn}>GET STARTED</button>
+        </Link>
+        <Link href="#about">
+          <button className={headerStyles.outline}>LEARN MORE</button>
+        </Link>
       </div>
     </div>
   );

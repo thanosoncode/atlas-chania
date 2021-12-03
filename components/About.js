@@ -6,9 +6,9 @@ import aboutStyles from "../styles/About.module.css";
 
 const About = () => {
   return (
-    <div className={aboutStyles.container}>
+    <div className={aboutStyles.container} id="about">
       <h4>Meet the coaches</h4>
-      <h1>Our Team</h1>
+      <h1>Team</h1>
       <section className={aboutStyles.flex}>
         <article>
           <h1>Hello, we are Atlas Chania</h1>
@@ -38,7 +38,13 @@ const About = () => {
           return (
             <div className={aboutStyles.card} key={index}>
               <div className={aboutStyles.img}>
-                <Image src={person.image} width="300px" height="450px" />
+                <Image
+                  src={person.image}
+                  width="300px"
+                  height="450px"
+                  layout="responsive"
+                  alt=""
+                />
               </div>
               <div className={aboutStyles.info}>
                 <h3>{person.name}</h3>

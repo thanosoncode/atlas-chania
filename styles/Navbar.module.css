@@ -1,6 +1,7 @@
 .nav {
   background-color: var(--color-bg);
   color: var(--color-text);
+  position: relative;
 }
 
 .center {
@@ -11,6 +12,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+}
+
+.center img {
+  border-radius: 50%;
 }
 
 .center h1 {
@@ -41,4 +46,37 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+}
+
+.menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+
+.menu:active {
+  color: var(--color-primary);
+}
+/* .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu span {
+  width: 23px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+} */
+
+@media screen and (max-width: 850px) {
+  .menu {
+    display: flex;
+  }
 }

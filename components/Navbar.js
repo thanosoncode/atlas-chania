@@ -1,37 +1,59 @@
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import LinksRow from "./LinksRow";
+import LinksColumn from "./LinksColumn";
+import logo from "../public/logo2.jpg";
+import { HiOutlineMenu } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
 import navbarStyles from "../styles/Navbar.module.css";
-import { FaFacebookF, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
-    <nav className={navbarStyles.nav} id="home">
-      <div className={navbarStyles.center}>
-        <h1>
-          <a href="#home">Atlas Chania</a>
-        </h1>
-        <ul className={navbarStyles.links}>
-          <li>
-            <a href="/#about">About us</a>
-          </li>
-          <li>
-            <a href="/#classes">Classes</a>
-          </li>
-          <li>
-            <a href="/#contact">Contact</a>
-          </li>
-          <ul className={navbarStyles.socials}>
-            <li>
-              <FaFacebookF />
-            </li>
-            <li>
-              <FaInstagramSquare />
-            </li>
-            <li>
-              <FaYoutube />
-            </li>
-          </ul>
-        </ul>
-      </div>
-    </nav>
+    <>
+      <nav className={navbarStyles.nav} id="home">
+        <div className={navbarStyles.center}>
+          <Image src={logo} width="30px" height="30px" />
+          <h1>
+            <Link href="#home">Atlas Chania</Link>
+          </h1>
+          {showMenu ? (
+            <div
+              className={navbarStyles.menu}
+              onClick={() => {
+                setShowMenu(!showMenu);
+              }}
+            >
+              <AiOutlineClose style={{ fontSize: "1.8rem" }} />
+            </div>
+          ) : (
+            <div
+              className={navbarStyles.menu}
+              onClick={() => {
+                setShowMenu(!showMenu);
+              }}
+            >
+              <HiOutlineMenu style={{ fontSize: "1.8rem" }} />
+            </div>
+          )}
+          {/* <div
+            className={navbarStyles.menu}
+            onClick={() => {
+              setShowMenu(!showMenu);
+            }}
+          >
+            <span className={navbarStyles.one}></span>
+            <span className={navbarStyles.two}></span>
+            <span className={navbarStyles.three}></span>
+          </div> */}
+
+          <LinksRow />
+        </div>
+        <LinksColumn showMenu={showMenu} />
+      </nav>
+    </>
   );
 };
 

@@ -9,13 +9,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-text);
+  gap: 30px;
 }
 
 .header h2 {
   font-weight: 500;
   color: var(--color-text-dark);
-
-  margin: -1rem;
 }
 
 .header h1 {

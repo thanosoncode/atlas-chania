@@ -31,8 +31,12 @@ const Contact = () => {
     setShowConfirmation(true);
   };
 
+  const openModal =
+    contactStyles["modal-container"] + " " + contactStyles["show"];
+
+  const hideModal = contactStyles["modal-container"];
   return (
-    <div className={contactStyles.container}>
+    <div className={contactStyles.container} id="contact">
       <div className={contactStyles.flex}>
         <form onSubmit={sendEmail} className={contactStyles.form}>
           <h1>Feel free to ask anything</h1>
@@ -65,15 +69,13 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div
-        className={
-          showConfirmation ? "modal-container show" : "modal-container"
-        }
-      >
-        <div className="modal">
+      <div className={showConfirmation ? openModal : hideModal}>
+        <div className={contactStyles.modal}>
           <h4>Thank you for your message!</h4>
           <button
-            className="contact-btn modal-btn"
+            className={
+              contactStyles["contact-btn"] + " " + contactStyles["modal-btn"]
+            }
             onClick={() => setShowConfirmation(false)}
           >
             Close
