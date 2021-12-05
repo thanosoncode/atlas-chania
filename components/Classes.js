@@ -12,7 +12,7 @@ const Classes = () => {
           return (
             <div key={index} className={classesStyles.card} id="classes">
               <div className={classesStyles.imgdiv}>
-                <Image src={item.image} width="360px" height="250px" alt="" />
+                <Image src={item.image} layout="fill" alt="" />
               </div>
               <div className={classesStyles.infoflex}>
                 <div className={classesStyles.infotitle}>

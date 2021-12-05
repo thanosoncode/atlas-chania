@@ -32,7 +32,7 @@ const About = () => {
         <article>
           {/* <h1>Hello, we are Atlas Chania</h1> */}
           <p>
-            Atlas Chania is Powerlifting, Weightlifting, CrossTraining Gym
+            Atlas Chania is a Powerlifting, Weightlifting, CrossTraining Gym
             located in Chania. <br />
             <p>
               Squat racks, competition benches, olympic weightlifting platforms,

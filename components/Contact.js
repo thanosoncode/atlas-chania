@@ -39,7 +39,7 @@ const Contact = () => {
     <div className={contactStyles.container} id="contact">
       <div className={contactStyles.flex}>
         <form onSubmit={sendEmail} className={contactStyles.form}>
-          <h1>Feel free to ask anything</h1>
+          <h1>Book a session or ask us anything you like</h1>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <textarea

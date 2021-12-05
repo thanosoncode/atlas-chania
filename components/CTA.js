@@ -43,8 +43,8 @@ const CTA = () => {
             <p>Monday - Saturday</p>
             <p>9:00AM - 11:00PM</p>
             <p>Sunday : Closed</p>
-            <p>Membership 40€ / month</p>
           </div>
+          <p>Membership 40€ / month</p>
         </div>
       </div>
     </div>

@@ -37,7 +37,9 @@
 }
 
 .imgdiv {
-  width: 100%;
+  width: 360px;
+  height: 300px;
+  position: relative;
 }
 
 .imgdiv img {
@@ -92,5 +94,11 @@
   }
   .flex {
     padding: 0;
+  }
+  .card {
+    margin-bottom: 4rem;
+  }
+  .right {
+    height: 40%;
   }
 }
