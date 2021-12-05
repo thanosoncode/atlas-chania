@@ -4,7 +4,7 @@ import headerStyles from "../styles/Header.module.css";
 const Header = () => {
   return (
     <div className={headerStyles.header}>
-      <h2>new way to build a healthy lifestyle</h2>
+      <h2>don't just become better. Become the best</h2>
       <h1>
         WE TEACH YOU <br />
         HOW TO LIFT THE WORLD
