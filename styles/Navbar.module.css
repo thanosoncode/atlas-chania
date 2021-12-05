@@ -91,6 +91,7 @@
 @media screen and (max-width: 550px) {
   .center h1 {
     font-size: 1.7rem;
+    margin-left: 1rem;
   }
   .logoDiv {
     gap: 25px;

@@ -52,9 +52,9 @@ const Navbar = () => {
             <span className={navbarStyles.three}></span>
           </div> */}
 
-          <LinksRow />
+          <LinksRow setShowMenu={setShowMenu} />
         </div>
-        <LinksColumn showMenu={showMenu} />
+        <LinksColumn showMenu={showMenu} setShowMenu={setShowMenu} />
       </nav>
     </>
   );

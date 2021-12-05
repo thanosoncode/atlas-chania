@@ -69,9 +69,6 @@ const Gallery = () => {
       </div>
       <div className={isModalOpen ? showOverlayClasses : hideOverlayClasses}>
         <div className={galleryStyles.modalContainer}>
-          <div className={galleryStyles.previous} onClick={previousPhoto}>
-            <FaChevronLeft color="white" />
-          </div>
           <div className={galleryStyles.modalImageContainer}>
             <Image
               src={gallery[index].image}
@@ -80,11 +77,20 @@ const Gallery = () => {
               className={galleryStyles.modalImage}
             />
             <div className={galleryStyles.closeModal} onClick={closeModal}>
-              <FaTimes color="white" />
+              <FaTimes color="white" className={galleryStyles.textShadow} />
             </div>
-          </div>
-          <div className={galleryStyles.next} onClick={nextPhoto}>
-            <FaChevronRight color="white" />
+            <div className={galleryStyles.previous} onClick={previousPhoto}>
+              <FaChevronLeft
+                color="white"
+                className={galleryStyles.textShadow}
+              />
+            </div>
+            <div className={galleryStyles.next} onClick={nextPhoto}>
+              <FaChevronRight
+                color="white"
+                className={galleryStyles.textShadow}
+              />
+            </div>
           </div>
         </div>
       </div>

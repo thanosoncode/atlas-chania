@@ -2,11 +2,13 @@ import Link from "next/link";
 import { FaFacebookF, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import linksRowStyles from "../styles/LinksRow.module.css";
 
-const LinksRow = () => {
+const LinksRow = ({ setShowMenu }) => {
   return (
     <ul className={linksRowStyles.links}>
       <li>
-        <Link href="/#about">About us</Link>
+        <Link href="/#about" onClick={() => setShowMenu(false)}>
+          About us
+        </Link>
       </li>
       <li>
         <Link href="/#classes">Classes</Link>

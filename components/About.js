@@ -26,11 +26,11 @@ const About = () => {
 
   return (
     <div className={aboutStyles.container} id="about">
-      <h4>Meet the coaches</h4>
-      <h1>Team</h1>
+      {/* <h4>Meet the coaches</h4>
+      <h1>Team</h1> */}
       <section className={aboutStyles.flex}>
         <article>
-          <h1>Hello, we are Atlas Chania</h1>
+          {/* <h1>Hello, we are Atlas Chania</h1> */}
           <p>
             Atlas Chania is Powerlifting, Weightlifting, CrossTraining Gym
             located in Chania. <br />

@@ -5,7 +5,7 @@ import CTA from "../components/CTA";
 import Header from "../components/Header";
 import Nav from "../components/Navbar";
 import Contact from "../components/Contact";
-import Map from "../components/Map";
+import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
 
 export default function Home() {
@@ -22,12 +22,13 @@ export default function Home() {
       </Head>
       <Nav />
       <Header />
-      <CTA />
+
       <About />
       <Classes />
+      <CTA />
       <Gallery />
       <Contact />
-      <Map />
+      <Footer />
     </>
   );
 }

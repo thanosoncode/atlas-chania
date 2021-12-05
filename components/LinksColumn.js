@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaFacebookF, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import linksColumnStyles from "../styles/LinksColumn.module.css";
 
-const LinksColumn = ({ showMenu }) => {
+const LinksColumn = ({ showMenu, setShowMenu }) => {
   const show = linksColumnStyles["links"] + " " + linksColumnStyles["show"];
 
   const hide = linksColumnStyles["links"];
@@ -10,7 +10,9 @@ const LinksColumn = ({ showMenu }) => {
   return (
     <ul className={showMenu ? show : hide}>
       <li>
-        <Link href="/#about">About us</Link>
+        <Link href="/#about" onClick={() => setShowMenu(false)}>
+          About us
+        </Link>
       </li>
       <li>
         <Link href="/#classes">Classes</Link>

@@ -64,6 +64,18 @@
   position: relative;
 }
 
+.modalImageContainer {
+  width: 95%;
+  height: 90%;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 0 10px white;
+}
+
+.modalImage {
+  object-fit: cover;
+}
+
 .previous,
 .next {
   display: flex;
@@ -72,16 +84,17 @@
   font-size: 3rem;
   cursor: pointer;
   color: white;
+  position: absolute;
 }
-
-.modalImageContainer {
-  width: 80%;
-  height: 60%;
-  position: relative;
+.previous {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
-
-.modalImage {
-  object-fit: cover;
+.next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .closeModal {
@@ -93,4 +106,32 @@
   color: white;
   cursor: pointer;
   background: none;
+}
+
+.textShadow {
+  filter: drop-shadow(3px 5px 2px #333);
+}
+
+.textShadow:hover,
+.textShadow:active {
+  filter: drop-shadow(3px 5px 2px #555);
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100vw;
+    padding: 2rem 0;
+  }
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+    padding: 5px;
+    justify-content: center;
+  }
+  .imageCont {
+    width: 100%;
+    height: 100px;
+  }
 }

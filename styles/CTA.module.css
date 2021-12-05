@@ -8,7 +8,7 @@
   /* max-width: 950px; */
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
@@ -31,7 +31,11 @@
 }
 
 .points {
-  margin: 1rem 0;
+  max-width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .point {
@@ -41,6 +45,10 @@
   gap: 10px;
   margin-bottom: 0.3rem;
   font-size: 0.9em;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
 }
 
 .point span {
@@ -53,7 +61,7 @@
 .membership button {
   text-transform: uppercase;
   margin-top: 1rem;
-  width: 100%;
+  width: 75%;
   background-color: var(--color-primary);
   color: var(--color-text);
   padding: 0.8em 0;
@@ -120,10 +128,15 @@
     text-align: center;
   }
 
-  .left p {
-    margin-top: 4rem;
-    font-size: 1.1rem;
+  .left h1 {
+    margin-top: 1rem;
   }
+
+  .book {
+    padding: 0;
+    margin-b: 0;
+  }
+
   .line {
     transform: rotate(90deg);
     display: none;
@@ -133,11 +146,13 @@
     margin: 0 auto;
   }
   .point {
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    text-align: left;
   }
   .point span {
     display: flex;
@@ -146,6 +161,13 @@
   }
 
   .right h1 {
-    margin-top: -4rem;
+    margin-top: 0rem;
+  }
+  .right {
+    text-align: center;
+    width: 90%;
+  }
+  .right p:last-child {
+    padding-top: 1rem;
   }
 }
