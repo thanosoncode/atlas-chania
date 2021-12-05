@@ -58,7 +58,7 @@ const About = () => {
             className={aboutStyles.buttonLeft}
             onClick={() => setIndex(index - 1)}
           >
-            <FaChevronLeft size="25px" />
+            <FaChevronLeft size="25px" className={aboutStyles.textShadow} />
           </button>
           {people.map((person, personIndex) => {
             let position = "nextSlide";
@@ -103,7 +103,7 @@ const About = () => {
             className={aboutStyles.buttonRight}
             onClick={() => setIndex(index + 1)}
           >
-            <FaChevronRight size="25px" />
+            <FaChevronRight size="25px" className={aboutStyles.textShadow} />
           </button>
         </div>
       </section>

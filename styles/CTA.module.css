@@ -126,6 +126,7 @@
   .left {
     width: 100%;
     text-align: center;
+    padding-top: 2rem;
   }
 
   .left h1 {
@@ -134,7 +135,7 @@
 
   .book {
     padding: 0;
-    margin-b: 0;
+    margin: 0;
   }
 
   .line {
@@ -153,6 +154,7 @@
     margin-bottom: 1rem;
     font-size: 1.1rem;
     text-align: left;
+    line-height: 25px;
   }
   .point span {
     display: flex;
@@ -167,6 +169,7 @@
   .right {
     text-align: center;
     width: 90%;
+    height: 40%;
   }
   .right p:last-child {
     padding-top: 1rem;

@@ -23,9 +23,10 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+  padding-top: 3rem;
 }
 
 .flex article {
@@ -67,6 +68,16 @@
   right: 0;
   z-index: 3;
   transform: translateY(-50%);
+}
+
+.textShadow {
+  color: white;
+  filter: drop-shadow(3px 3px 2px var(--color-primary));
+}
+
+.textShadow:hover,
+.textShadow:active {
+  filter: drop-shadow(3px 3px 2px var(--color-primary));
 }
 
 .card {

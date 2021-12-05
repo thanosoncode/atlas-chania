@@ -1,23 +1,36 @@
 import Link from "next/link";
+import { useGlobalContext } from "./Context";
 import { FaFacebookF, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import linksColumnStyles from "../styles/LinksColumn.module.css";
 
-const LinksColumn = ({ showMenu, setShowMenu }) => {
+const LinksColumn = () => {
   const show = linksColumnStyles["links"] + " " + linksColumnStyles["show"];
 
   const hide = linksColumnStyles["links"];
 
+  const { showMenu, setShowMenu } = useGlobalContext();
+
   return (
     <ul className={showMenu ? show : hide}>
-      <li>
-        <Link href="/#about" onClick={() => setShowMenu(false)}>
-          About us
-        </Link>
+      <li
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
+      >
+        <Link href="/#about">About us</Link>
       </li>
-      <li>
+      <li
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
+      >
         <Link href="/#classes">Classes</Link>
       </li>
-      <li>
+      <li
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
+      >
         <Link href="/#contact">Contact</Link>
       </li>
       <ul className={linksColumnStyles.socials}>

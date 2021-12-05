@@ -7,9 +7,10 @@ import logo from "../public/logo2.jpg";
 import { HiOutlineMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import navbarStyles from "../styles/Navbar.module.css";
+import { useGlobalContext } from "./Context";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const { showMenu, setShowMenu } = useGlobalContext();
 
   return (
     <>
@@ -41,20 +42,10 @@ const Navbar = () => {
               <HiOutlineMenu style={{ fontSize: "1.8rem" }} />
             </div>
           )}
-          {/* <div
-            className={navbarStyles.menu}
-            onClick={() => {
-              setShowMenu(!showMenu);
-            }}
-          >
-            <span className={navbarStyles.one}></span>
-            <span className={navbarStyles.two}></span>
-            <span className={navbarStyles.three}></span>
-          </div> */}
 
-          <LinksRow setShowMenu={setShowMenu} />
+          <LinksRow />
         </div>
-        <LinksColumn showMenu={showMenu} setShowMenu={setShowMenu} />
+        <LinksColumn />
       </nav>
     </>
   );

@@ -7,6 +7,7 @@ import Nav from "../components/Navbar";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
+import { ContextProvider } from "../components/Context";
 
 export default function Home() {
   return (
@@ -20,15 +21,17 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Nav />
-      <Header />
+      <ContextProvider>
+        <Nav />
+        <Header />
 
-      <About />
-      <Classes />
-      <CTA />
-      <Gallery />
-      <Contact />
-      <Footer />
+        <About />
+        <Classes />
+        <CTA />
+        <Gallery />
+        <Contact />
+        <Footer />
+      </ContextProvider>
     </>
   );
 }
