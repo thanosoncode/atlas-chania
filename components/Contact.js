@@ -38,7 +38,11 @@ const Contact = () => {
   return (
     <div className={contactStyles.container} id="contact">
       <div className={contactStyles.flex}>
-        <form onSubmit={sendEmail} className={contactStyles.form}>
+        <form
+          onSubmit={sendEmail}
+          className={contactStyles.form}
+          data-aos="fade-up"
+        >
           <h1>Book a session or ask us anything you like</h1>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
@@ -49,7 +53,7 @@ const Contact = () => {
           ></textarea>
           <button type="submit">Send Message</button>
         </form>
-        <div className={contactStyles.details}>
+        <div className={contactStyles.details} data-aos="fade-up">
           <h1>Where you can find us</h1>
 
           <div className={contactStyles.map}>

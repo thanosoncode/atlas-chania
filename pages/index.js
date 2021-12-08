@@ -8,6 +8,8 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
 import { ContextProvider } from "../components/Context";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
           href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
       <ContextProvider>
         <Nav />

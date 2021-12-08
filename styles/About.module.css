@@ -27,6 +27,7 @@
   flex-wrap: wrap;
   gap: 40px;
   padding-top: 3rem;
+  min-height: 100vh;
 }
 
 .flex article {
@@ -54,34 +55,45 @@
   z-index: 5;
 }
 
+.sliderContainer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .buttonLeft {
   position: absolute;
   top: 50%;
-  left: 0;
-  z-index: 3;
+  left: -40px;
+  z-index: 10;
   transform: translateY(-50%);
+  background: none;
 }
 
 .buttonRight {
   position: absolute;
   top: 50%;
-  right: 0;
-  z-index: 3;
+  right: -40px;
+  z-index: 10;
   transform: translateY(-50%);
 }
 
 .textShadow {
   color: white;
-  filter: drop-shadow(3px 3px 2px var(--color-primary));
+  filter: drop-shadow(3px 3px 5px white);
 }
 
 .textShadow:hover,
 .textShadow:active {
-  filter: drop-shadow(3px 3px 2px var(--color-primary));
+  filter: drop-shadow(3px 3px 5px black);
+}
+
+.sliderContainer {
+  position: relative;
+  z-index: 10;
 }
 
 .card {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 8px;
   position: absolute;
   top: 0;
@@ -94,6 +106,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 3px;
+  background-color: transparent;
 }
 
 .card:hover {
@@ -111,16 +125,10 @@
   transform: translateX(100%);
 }
 
-.slider button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 .img {
   overflow: hidden;
   position: relative;
-  height: 400px;
+  height: 390px;
   width: 300px;
 }
 
@@ -164,5 +172,8 @@
   }
   .flex article h1 {
     text-align: unset;
+  }
+  .flex {
+    padding-top: 1rem;
   }
 }

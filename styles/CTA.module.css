@@ -15,6 +15,7 @@
 
 .left {
   width: 50%;
+  padding-left: 4rem;
 }
 
 .left h1 {
@@ -106,6 +107,11 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1050px) {
+  .left {
+    padding-left: 0;
+  }
+}
 @media screen and (max-width: 700px) {
   .flex {
     padding: 1rem 2rem;

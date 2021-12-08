@@ -6,7 +6,7 @@ const CTA = () => {
   return (
     <div className={ctaStyles.container}>
       <div className={ctaStyles.flex}>
-        <div className={ctaStyles.left}>
+        <div className={ctaStyles.left} data-aos="fade-right">
           <div className={ctaStyles.points}>
             <div className={ctaStyles.point}>
               <span>
@@ -37,7 +37,7 @@ const CTA = () => {
           </div>
         </div>
         <div className={ctaStyles.line}></div>
-        <div className={ctaStyles.right}>
+        <div className={ctaStyles.right} data-aos="fade-left">
           <h1>Working Hours</h1>
           <div>
             <p>Monday - Saturday</p>
