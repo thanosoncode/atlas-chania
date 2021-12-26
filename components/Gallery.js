@@ -50,7 +50,7 @@ const Gallery = () => {
   return (
     <div className={galleryStyles.container}>
       <h1>Gallery</h1>
-      <div className={galleryStyles.grid} data-aos="slide-up">
+      <div className={galleryStyles.grid}>
         {gallery.map((item, index) => {
           return (
             <div

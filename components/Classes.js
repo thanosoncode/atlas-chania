@@ -10,12 +10,7 @@ const Classes = () => {
       <div className={classesStyles.flex}>
         {classes.map((item, index) => {
           return (
-            <div
-              key={index}
-              className={classesStyles.card}
-              id="classes"
-              data-aos={index % 2 == 0 ? "slide-right" : "slide-left"}
-            >
+            <div key={index} className={classesStyles.card} id="classes">
               <div className={classesStyles.imgdiv}>
                 <Image src={item.image} layout="fill" alt="" />
               </div>

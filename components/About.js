@@ -29,7 +29,7 @@ const About = () => {
     <div className={aboutStyles.container} id="about">
       {/* <h4>Meet the coaches</h4>
       <h1>Team</h1> */}
-      <section className={aboutStyles.flex} data-aos="fade-up">
+      <section className={aboutStyles.flex}>
         <article>
           {/* <h1>Hello, we are Atlas Chania</h1> */}
           <p>
