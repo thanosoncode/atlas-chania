@@ -1,15 +1,15 @@
-import giannis from "../public/dag.jpg";
+import crystal from "../public/instructor.jpg";
 import calabrese from "../public/calabrese.jpg";
 import michaels from "../public/michaels.jpg";
 
 export const staff = [
   {
     id: 1,
-    name: "Giannis Dagounakis",
+    name: "Crystal Carey",
     description: "Owner, Head Coach",
-    image: giannis,
-    fb: "https://www.facebook.com/atlaschania/",
-    ig: "https://www.instagram.com/atlaschania/?hl=en",
+    image: crystal,
+    fb: "https://www.facebook.com/PaigeVanZant",
+    ig: "https://www.instagram.com/itsreallycrystal/?hl=en",
   },
   {
     id: 2,
